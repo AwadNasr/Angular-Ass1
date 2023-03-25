@@ -1,0 +1,27 @@
+<section>
+  <div class="container">
+    <h1 class="text-center display-1 my-4">Portfolio</h1>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col" data-bs-toggle="modal" data-bs-target="#exampleModal" *ngFor="let image of images; let index=index">
+        <div class="item " (click)="showImage(image)">
+          <img [src]="image.imageSrc" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Portfolio</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h4>{{imageModal.disc}}</h4>
+        <img [src]="imageModal.imageSrc" class="img-fluid" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>

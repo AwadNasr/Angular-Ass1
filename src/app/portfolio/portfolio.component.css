@@ -1,0 +1,9 @@
+.item{
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+h1{
+  color: #2C3E50;
+  font-weight: 700;
+}

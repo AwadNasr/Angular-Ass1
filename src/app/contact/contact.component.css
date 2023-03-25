@@ -1,0 +1,14 @@
+h1{
+  color: #2C3E50;
+}
+button{
+  color: white;
+  background-color: #1ABC9C;
+  border-radius: 15px;
+  padding: 15px 30px !important;
+  transition: all 0.5s;
+}
+button:hover{
+  background-color: #2C3E50 !important;
+  color: white !important;
+}
